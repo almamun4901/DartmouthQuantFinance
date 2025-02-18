@@ -6,9 +6,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="min-h-screen overflow-x-hidden font-sans">
       <Header />
-      <main>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
     </div>
   );
 }

@@ -15,3 +15,26 @@ body {
     font-weight: bold;
   }
   
+/* Add responsive base styles */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply text-sm sm:text-base; /* Responsive base text size */
+  }
+  
+  h1 {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+  
+  h2 {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+  
+  .font-mono {
+    @apply tracking-tight sm:tracking-normal;
+  }
+}
+  
